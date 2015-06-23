@@ -28,10 +28,14 @@ run d =
      createMakeWaitProcesses (commands ~>. p)
      createMakeWaitProcessM (linkLatest d u)
      
+
+-- http://download.osmand.net/list.php
+-- http://download.osmand.net/download.php?standard=yes&file=Australia-oceania_2.obf.zip
+-- http://download.osmand.net/download.php?standard=yes&file=Indonesia_asia_2.obf.zip    
 main ::
   IO ()
 main =
   do a <- getArgs
      case a of
-       [] -> hPutStrLn stderr "Usage: osmgarmin <output-dir>" >> exitWith (IsNotZero (notZeroElse1 127))
+       [] -> hPutStrLn stderr "Usage: osmand-download <output-dir>" >> exitWith (IsNotZero (notZeroElse1 129))
        (o:_) -> exit (run o)
