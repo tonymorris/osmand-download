@@ -55,10 +55,7 @@ executable          osmand-download
                     , directory >= 1.2
                     , process >= 1.2
                     , sys-process >= 0.1.5
-                    , lens >= 4.0
-                    , notzero >= 0.0.10
-                    , transformers >= 0.4
-
+   
   ghc-options:
                     -Wall
 
