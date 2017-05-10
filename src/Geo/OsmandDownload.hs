@@ -105,6 +105,30 @@ indonesiaAsia =
     , distObf "Indonesia_asia"
     ]
 
+usColoradoNorthAmerica ::
+  FilePath
+  -> [CreateProcess]
+usColoradoNorthAmerica =
+  sequence
+    [
+      getObf "Us_colorado_northamerica_2"
+    , unzipObf "Us_colorado_northamerica_2"
+    , renameObf "Us_colorado_northamerica_2" "Us_colorado_northamerica"
+    , distObf "Us_colorado_northamerica_2"
+    ]
+
+usCaliforniaNorthAmerica ::
+  FilePath
+  -> [CreateProcess]
+usCaliforniaNorthAmerica =
+  sequence
+    [
+      getObf "Us_california_northamerica_2"
+    , unzipObf "Us_california_northamerica_2"
+    , renameObf "Us_california_northamerica_2" "Us_california_northamerica_2"
+    , distObf "Us_california_northamerica_2"
+    ]
+
 commands ::
   FilePath
   -> [CreateProcess]
@@ -113,6 +137,8 @@ commands =
     [
       australiaOceania
     , indonesiaAsia
+    , usColoradoNorthAmerica
+    , usCaliforniaNorthAmerica
     ]
 
 linkLatest ::
