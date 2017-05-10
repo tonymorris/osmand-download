@@ -26,14 +26,14 @@ library
                     Haskell2010
 
   build-depends:
-                      base >= 3   && < 5
+                      base >= 3   && < 6
                     , time >= 1.5
                     , filepath >= 1.4
                     , directory >= 1.2
                     , process >= 1.2
                     , sys-process >= 0.1.4
                     , lens >= 4.0
-                    , notzero >= 0.0.10
+                    , notzero >= 0.0.11
                     , transformers >= 0.4
    
   ghc-options:
