@@ -30,7 +30,8 @@ library
                     , time >= 1.5
                     , filepath >= 1.4
                     , process >= 1.2
-                    , sys-process >= 0.1.4
+                    , sys-process == 0.1.6
+                    , notzero == 0.0.10
    
   ghc-options:
                     -Wall
